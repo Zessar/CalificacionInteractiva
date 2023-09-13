@@ -1,0 +1,180 @@
+@import url(/css/root.css);
+
+
+/* Colores Generales */
+
+:root {
+    --color-text-orange: hsl(25, 97%, 53%);
+    --color-text-lightgrey: hsl(217, 12%, 63%);
+    --color-text-white: hsl(0, 0%, 100%);
+
+    --bg-submmit-white: hsl(0, 0%, 100%);
+    --bg-submmit-orange: hsl(25, 97%, 53%);
+
+    --bg-circle-orange: hsl(25, 97%, 53%);
+    --bg-circle-light: hsl(217, 12%, 63%);
+    --bg-circle-medium: hsl(216, 12%, 54%);
+    --bg-circle-dark: hsl(217, 14%, 29%);
+
+    --bg-gradient-light: hsl(213, 19%, 18%);
+    --bg-gradient-dark: hsl(216, 12%, 8%);
+    
+    --bg-body-background: hsl(0, 0%, 3%);
+
+}
+
+/* Fuentes, Color de fondo y centrar el Div */
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--bg-body-background);
+    padding: 10%;
+}
+
+/* Primera Tarjeta, donde se puede puntuar */
+
+.card__first {
+    width: 400px;
+    padding: 2.2em;
+    border-radius: 30px;
+    background: linear-gradient(var(--bg-gradient-light),var(--bg-gradient-dark));
+    margin: 0 auto;
+    display: block;
+}
+
+.circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-circle-dark);
+    transition: all 0.3s ease-in-out;
+}
+
+.bg:hover {
+    background-color: var(--bg-circle-medium);
+    color: var(--color-text-white);
+}
+
+.circle > img {
+    width: 15px;
+    height: 15px;
+}
+
+.first__numbers {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 1em 0;
+    margin-bottom: 1.5em;
+    color: var(--color-text-lightgrey);
+}
+
+.numbers {
+    font-size: 1em;
+}
+
+.first__h2 {
+    padding: 1em 0;
+    font-size: 1.7em;
+    color: var(--color-text-white);
+}
+
+.first__p {
+    font-size: 15px;
+    padding-bottom: 1em;
+    color: var(--color-text-lightgrey);
+}
+
+.submmit {
+    width: 100%;
+    padding: 0.9em 0;
+    color: var(--color-text-orange);
+    font-size: 0.9em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    border-radius: 30px;
+    background-color: var(--color-text-white);
+    transition: all 0.3s ease-in-out;
+}
+
+.submmit:hover {
+    color: var(--color-text-white);
+    background-color: var(--color-text-orange);
+}
+
+/* Segunda tarjeta, donde se te agradece y sale la puntuacion que has elejido */
+
+.card__second {
+    width: 400px;
+    padding: 2em;
+    border-radius: 25px;
+    background: linear-gradient(var(--bg-gradient-light),var(--bg-gradient-dark));
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+}
+
+.second__img {
+    width: 170px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.second__img > img {
+    width: 100%;
+}
+
+.second__p {
+    width: 65%;
+    border-radius: 25px;
+    padding: 0.5em;
+    margin: 0 auto;
+    font-size: 15px;
+    margin-bottom: 2em;
+    letter-spacing: 0.05em;
+    color: var(--color-text-orange);
+    background: var(--bg-gradient-light);
+}
+
+.second__h2 {
+    color: var(--color-text-white);
+    font-weight: 500;
+    font-size: 2em;
+}
+
+.second__pp {
+    color: var(--color-text-lightgrey);
+    font-size: 15px;
+    margin: 2em 0 0.5em 0;
+}
+
+/* MediaQuery */
+
+
+@media only screen and (max-width: 375px) {
+    body {
+        padding: 10% 3%;
+    }
+
+    .card__first, .card__second {
+        width: 350px;
+        padding: 1.7em;
+    }
+}
+
+
+/* Atributo */
+
+
+.attribution {
+    padding: 2em;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
