@@ -20,8 +20,8 @@ Los usuarios deberían poder:
 
 ### Links
 
-- Solution URL: [Añado la URL de la solucion](https://github.com/Zessar/card-component)
-- Live Site URL: [Add live site URL here](zessar.github.io)
+- Solution URL: [Añado la URL de la solucion](https://github.com/Zessar/CalificacionInteractiva)
+- Live Site URL: [Add live site URL here](https://zessar.github.io/CalificacionInteractiva/)
 
 ## Mi proceso
 
